@@ -1,0 +1,142 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(206, 232, 255);
+}
+
+/* big dady */
+main {}
+
+.container {
+    width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+hr {
+    color: 1px solid rgb(96, 76, 76);
+}
+
+/* actors */
+.actors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.actor {
+    display: flex;
+    align-items: center;
+}
+
+.actor img {
+    width: 56px;
+    padding-right: 15px;
+}
+
+/* blog section */
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog {
+    display: flex;
+}
+
+.blog img {
+    width: 130px;
+    padding-top: 10px;
+}
+
+.blog div {
+    padding-left: 20px;
+}
+
+.blog div a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.blog div a:hover {
+    background-color: rgb(41, 62, 62);
+    color: #fff;
+    border-right: 1px solid rgb(164, 237, 237);
+    border-radius: 5px 0 5px 0;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgb(37, 96, 73);
+}
+
+/*---------------
+course section 
+-----------------*/
+.course-sec {
+    width: 800px;
+    background-color: #fff;
+    padding: 30px;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.course img {
+    width: 200px;
+    height: 100px;
+    padding-left: 10px;
+}
+
+.course-detail {
+    justify-content: space-between;
+}
+
+.fa-star.filled {
+    color: rgb(255, 213, 44);
+}
+
+.fa-star.empty {
+    color: rgb(87, 95, 95);
+}
+
+
+.course-duration {
+    color: aqua;
+    background-color: beige;
+    padding: 5px;
+    border-radius: 10px;
+    width: 70%;
+    margin-top: 10px;
+}
+
+/*----------
+ media query 
+ -----------*/
+/* for andrwed */
+@media only screen and (max-width:688px) {
+    .container {
+        background-color: aliceblue;
+        color: rgb(133, 133, 231);
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .course-sec {
+        background-color: aliceblue;
+        color: rgb(133, 133, 231);
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+}
